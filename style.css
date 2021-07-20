@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=Bebas+Neue&display=swap');
+
 * {
   color: #06070e;
+  font-family: 'Amiko', sans-serif;
 }
 
 body {
@@ -13,14 +16,24 @@ section {
 h1 {
   display: inline-block;
   margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+}
+
+h1 > span {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
 }
 
 h2 {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 h3 {
+  font-size: 16px;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 h4 > span {
@@ -28,9 +41,11 @@ h4 > span {
 }
 
 header {
+  background-color: #cac4ce;
   display: flex;
   justify-content: space-between;
   text-align: center;
+  padding: 2rem 0;
 }
 
 header > span {
@@ -50,6 +65,7 @@ header > span:last-of-type {
 nav > ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
   height: 3rem;
   display: flex;
   justify-content: space-around;
@@ -62,15 +78,22 @@ nav li {
 
 .menu {
   background-color: #06070e;
-  margin: 2rem 0;
+  margin: 0;
   position: sticky;
   top: 0;
 }
 
 .menu a {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
   text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:active {
+  color: #f9dc5c;
 }
 
 .about_me--bar,
@@ -86,6 +109,15 @@ ul {
 
 li {
   margin-bottom: 0.5rem;
+}
+
+.intro {
+  text-align: justify;
+}
+
+hr {
+  border: 1px solid #cac4ce;
+  width: 200px;
 }
 
 .blue {
@@ -143,4 +175,12 @@ td:first-of-type {
   font-weight: bold;
   text-align: right;
   padding-right: 0.5rem;
+}
+
+.contact_info a:visited {
+  color: #743880;
+}
+
+.contact_info .paragraph:first-of-type a {
+  text-decoration: none;
 }
