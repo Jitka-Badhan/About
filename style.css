@@ -1,0 +1,146 @@
+* {
+  color: #06070e;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  margin: 4rem 2rem;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 > span {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+header > span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header > span:first-of-type {
+  margin-right: 1rem;
+}
+
+header > span:last-of-type {
+  margin-left: 1rem;
+  align-self: flex-end;
+}
+
+nav > ul {
+  list-style: none;
+  padding-left: 0;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+.menu {
+  background-color: #06070e;
+  margin: 2rem 0;
+  position: sticky;
+  top: 0;
+}
+
+.menu a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.about_me--bar,
+.about_me--paragraphs,
+.paragraph {
+  margin: 3rem 0;
+}
+
+ul {
+  padding-left: 1rem;
+  list-style-image: url('img/iconmonstr-arrow-25.svg');
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.blue {
+  background-color: #a2dbe2;
+}
+
+.orange {
+  background-color: #ff8c61;
+}
+
+.yellow {
+  background-color: #f9dc5c;
+}
+
+.purple {
+  background-color: #743880;
+  color: white;
+}
+
+.green {
+  background-color: #5e8c31;
+  color: white;
+}
+
+.bar > div {
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.portrait {
+  height: 95%;
+  border-radius: 50%;
+}
+
+figure {
+  max-width: 50vw;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.action_icon {
+  height: 7rem;
+}
+
+td {
+  padding-bottom: 0.5rem;
+  vertical-align: top;
+}
+
+td:first-of-type {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 0.5rem;
+}
