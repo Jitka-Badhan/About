@@ -108,7 +108,8 @@ nav li {
 
 .about_me--bar,
 .about_me--paragraphs,
-.resume--paragraphs {
+.resume--paragraphs,
+.paragraph {
   margin: 0 0 3rem;
 }
 
@@ -275,6 +276,7 @@ td:first-of-type {
 
   .paragraph {
     flex-basis: 45%;
+    margin: 0;
   }
 
   .large {
