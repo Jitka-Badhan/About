@@ -3,6 +3,7 @@
 * {
   color: #06070e;
   font-family: 'Amiko', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,11 +11,11 @@ body {
 }
 
 section {
-  margin: 4rem 2rem;
+  max-width: 85vw;
+  margin: 4rem auto;
 }
 
 h1 {
-  display: inline-block;
   margin: 0;
   font-family: 'Bebas Neue', cursive;
   text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
@@ -23,9 +24,15 @@ h1 {
 h1 > span {
   font-family: 'Bebas Neue', cursive;
   font-size: 24px;
+  margin: 0 0 0 10px;
+}
+
+h1 > img {
+  filter: contrast(10);
 }
 
 h2 {
+  margin-top: 0;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -44,8 +51,9 @@ header {
   background-color: #cac4ce;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
 }
 
 header > span {
@@ -55,9 +63,11 @@ header > span {
 
 header > span:first-of-type {
   margin-right: 1rem;
+  align-self: flex-start;
 }
 
 header > span:last-of-type {
+  margin-bottom: 2rem;
   margin-left: 1rem;
   align-self: flex-end;
 }
@@ -98,8 +108,12 @@ nav li {
 
 .about_me--bar,
 .about_me--paragraphs,
-.paragraph {
-  margin: 3rem 0;
+.resume--paragraphs {
+  margin: 0 0 3rem;
+}
+
+.sub-paragraph {
+  margin-top: 3rem;
 }
 
 ul {
@@ -166,10 +180,6 @@ figure {
   height: 7rem;
 }
 
-.sub-paragraph {
-  margin-top: 3rem;
-}
-
 td {
   padding-bottom: 0.5rem;
   vertical-align: top;
@@ -181,6 +191,12 @@ td:first-of-type {
   padding-right: 0.5rem;
 }
 
+.contact_info a:hover,
+.contact_info a:focus,
+.contact_info a:active {
+  color: #5e8c31;
+}
+
 .contact_info a:visited {
   color: #743880;
 }
@@ -189,10 +205,20 @@ td:first-of-type {
   text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 560px) {
+  h1 > img {
+    vertical-align: middle;
+  }
+
   header {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  header > span:first-of-type,
+  header > span:last-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: center;
   }
 
   .bar {
@@ -201,11 +227,11 @@ td:first-of-type {
   }
 
   .bar div {
-    flex-basis: calc((100vw - 8rem) / 2);
+    width: 50%;
   }
 
-  .bar .center {
-    flex-basis: calc(100vw - 4rem);
+  .center {
+    flex-basis: 100%;
   }
 
   .bar figure {
@@ -215,7 +241,13 @@ td:first-of-type {
 }
 
 @media screen and (min-width: 1000px) {
-  section {
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  section,
+  nav > ul {
     max-width: 75vw;
     margin-left: auto;
     margin-right: auto;
@@ -232,7 +264,7 @@ td:first-of-type {
   }
 
   .bar div {
-    padding: 0;
+    padding: 0 5px;
   }
 
   .about_me--paragraphs,
